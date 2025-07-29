@@ -75,7 +75,7 @@
     lw          a1, 0x11(sp)
     lw          a2, 0x15(sp)
 @@ret:
-    j           returnAdd
+    j           HOOK + 8
     addiu       sp, sp, 0x19
 @main_end:
 .word HOOK
